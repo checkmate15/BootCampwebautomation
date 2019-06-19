@@ -1,4 +1,8 @@
 package citibankhomepage;
 
-public class CitiBankHomepage {
+import Base.CommonAPI;
+
+
+public class CitiBankHomepage extends CommonAPI {
+
 }

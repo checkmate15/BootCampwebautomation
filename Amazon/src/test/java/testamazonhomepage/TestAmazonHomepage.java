@@ -12,12 +12,14 @@ import org.testng.annotations.Test;
 public class TestAmazonHomepage extends CommonAPI {
 
     AmazonHomepage TestHomepage;
-    public String url ="https://www.amazon.com/";
+    String url = "https://amazon.com";
+
 
     @BeforeMethod
     public void intialization() {
         TestHomepage = PageFactory.initElements(driver, AmazonHomepage.class);
         driver.get(url);
+
     }
     @Test
     public void clicksignIn(){
