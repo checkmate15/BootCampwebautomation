@@ -97,7 +97,7 @@ public class CommonAPI {
         if (platform.equalsIgnoreCase("mac") && browser.equalsIgnoreCase("chrome")) {
             System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\drivers\\chromedriver");
         } else if (platform.equalsIgnoreCase("windows") && browser.equalsIgnoreCase("chrome")) {
-            System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Adnan Ahmed\\Desktop\\WebAutomationBC\\Generic\\src\\main\\resources\\drivers\\chromedriverN.exe");
         }
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -110,7 +110,7 @@ public class CommonAPI {
     public static void getChromeOptions(){
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Adnan Ahmed\\Desktop\\WebAutomationBC\\Generic\\src\\main\\resources\\drivers\\chromedriverN.exe");
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);

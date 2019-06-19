@@ -23,7 +23,7 @@ public class AmazonHomepage extends CommonAPI {
     }
     public void signin(){
         typeByXpath("//*[@id='ap_email']","ahmedadnan1@gmail.com");
-        typeByXpath("//*[@id='ap_password']","asdfgh");
+        typeByXpath("//*[@id='ap_password']","123456");
         clickByXpath("//*[@id='signInSubmit']");
     }
 
